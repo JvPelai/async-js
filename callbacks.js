@@ -17,12 +17,12 @@ function logNumber(){
 
 // a variation on how structure async functions with callbacks
 
-function addtwo(error,fileContents){
-    if(err){
+function addTwo(error,fileContents){
+    if(error){
         console.log(error)
     }
     myNumber = parseInt(fileContents);
-    myNumber++ 
+    myNumber+= 2 
     console.log(myNumber)
 
 }
