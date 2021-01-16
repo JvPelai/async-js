@@ -4,7 +4,7 @@ var myNumber;
 //callback overview
 
 function addOne(callback){
-    fs.readFile('number.txt', function doneReading(err, fileContents){
+    fs.readFile('files/number.txt', function doneReading(err, fileContents){
         myNumber = parseInt(fileContents)
         myNumber++
         callback()
@@ -28,4 +28,4 @@ function addTwo(error,fileContents){
 }
 
 
-fs.readFile('number.txt', addTwo)
+fs.readFile('files/number.txt', addTwo)
